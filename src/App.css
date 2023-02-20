@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+:root{
+	--main-color:#fff;
+	--user-color:blue;
+	--default-padding:10px;
+}
+@keyframes bgAnimation {
+	from{
+		width: 0%;
+	}
+	to{
+		width: 100%;
+	}
+}
+@keyframes scaleAnimation {
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+	padding: 0; margin: 0; box-sizing: border-box;
+	font-family: 'Pretendard-Regular','Courier New', Courier, monospace;
+}
+li{list-style: none;}
+a{text-decoration: none; color: inherit}
+.inner{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+img{
+	width: 100%;
+}
+b{
+	padding-left: var(--default-padding);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	height: 50px;
+	overflow: hidden;
+}
+.Introduce{
+	overflow: hidden;
+	height: 50px;
+	font-size: 30px;
+	padding: 5px 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	animation: bgAnimation 3s forwards;
+	background: var(--user-color);
+	max-width: 300px;
+	color: #fff;
+	border-radius: 0 50px 50px 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.comment{
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--user-color);
+	margin-bottom: var(--default-padding);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+	color: var(--user-color);
 }

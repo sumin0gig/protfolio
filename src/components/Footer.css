@@ -1,0 +1,41 @@
+footer{
+	border-top: 1px solid #ccc;
+}
+.footList{
+	display: flex;
+	justify-content: space-between;
+}
+.footList > li{
+	display: flex;
+	align-items: center;
+	padding: 0 var(--default-padding);
+}
+.footList .imgDiv{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+.linkLists{
+	font-size: 15px;
+}
+.linkList{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 120px;
+	margin: var(--default-padding);
+	padding: var(--default-padding) calc(var(--default-padding)*2);
+	border-radius: calc(var(--default-padding)*2);
+	border: 1px solid #ccc;
+}
+.github, .velog{
+	transition: .7s;
+}
+.github:hover{
+	background-color: black;
+	color: #fff;
+}
+.velog:hover{
+	background-color: #12B886;
+	color: #fff;
+}

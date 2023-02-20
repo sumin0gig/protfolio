@@ -1,0 +1,67 @@
+.AboutMe{
+	border-top: 1px solid #ccc;
+	margin: 20px 0;
+	padding: 40px 0;
+	animation: bgAnimation 1s forwards;
+	overflow: hidden;
+}
+
+.AboutMe .content{
+	display: grid;
+	grid-template-areas:
+	"img top"
+	"img bottom";
+	justify-content: start;
+	align-items: center;
+	gap: 30px;
+	margin: 70px;
+}
+.AboutMe .content b{
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+.AboutMe .content .imgDiv{
+	width: 250px;
+	height: 250px;
+	margin: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	grid-area: img;
+	border: 1px solid #ccc;
+}
+.AboutMe .content .Acomment{
+	display: flex;
+	padding-top: 10px;
+	color: var(--user-color);
+}
+.AboutMe .content .Acomment p:first-child{
+	font-weight: bold;
+	padding: 0 10px 0 30px;
+}
+.AboutMe .content .Acomment a:last-child{
+	color: #777;
+	transition: .3s;
+}
+.AboutMe .content .Acomment a:last-child:hover{
+	color: inherit;
+}
+.AboutMe .content .comment-top{
+	grid-area: top;
+}
+.AboutMe .content .comment-bottom{
+	grid-area: bottom;
+}
+.AboutMe .language{
+	margin-bottom: 50px;
+}
+.AboutMe .language .introduce-collection{
+display: flex;
+flex-wrap: wrap;
+}
+.AboutMe .introduce{
+	padding: 15px 20px;
+	margin: var(--default-padding);
+	border-radius: 50px 50px 0px 50px;
+	background-color: #f0f0f0;
+	animation: scaleAnimation .5s forwards;
+}
