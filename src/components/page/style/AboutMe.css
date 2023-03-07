@@ -47,9 +47,15 @@
 }
 .AboutMe .content .comment-top{
 	grid-area: top;
+	padding: 30px 60px 40px 30px;
+	border-radius: calc(var(--default-padding)*2);
+	background: #f7f7f7;
 }
 .AboutMe .content .comment-bottom{
 	grid-area: bottom;
+	padding: 30px 60px 40px 30px;
+	border-radius: calc(var(--default-padding)*2);
+	background: #f7f7f7;
 }
 .AboutMe .language{
 	margin-bottom: 50px;
@@ -62,6 +68,7 @@ flex-wrap: wrap;
 	padding: 15px 20px;
 	margin: var(--default-padding);
 	border-radius: 50px 50px 0px 50px;
+	border: 3px solid #fff;
 	background-color: #f0f0f0;
 	animation: scaleAnimation .5s forwards;
 }

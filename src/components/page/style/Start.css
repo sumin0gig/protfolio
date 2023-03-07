@@ -1,0 +1,47 @@
+
+.start{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: .5s;
+	text-align: center;
+}
+.text-animation{
+	overflow: hidden;
+	height: 40px;
+	animation: bgAnimation 3s forwards linear;
+}
+.color-animation{
+	transform: scale(0);
+	animation: scaleAnimation 1s 3s forwards;
+}
+.start .start-quset{
+	padding-bottom: 50px;
+}
+.start input{
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid #ccc;
+	line-height: 40px;
+	font-size: 32px;
+	text-align: center;
+	width: 300px;
+}
+.favorite-color{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.favorite-color button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 120px;
+	height: 35px;
+	border-radius: 20px;
+	transition: .5s;
+}
+.favorite-color button:hover{
+	background-color: #ccc;
+}

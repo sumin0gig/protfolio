@@ -2,6 +2,7 @@
 	border-top: 1px solid #ccc;
 	margin: 20px 0;
 	padding: 40px 0;
+	animation: bgAnimation 1s forwards;
 }
 .main .hello{
 	display: flex;
@@ -14,6 +15,11 @@
 	margin: 5px;
 	cursor: default;
 	border-radius: 10px;
+	transition: .5s;
+}
+.main .hello .gifbtn:hover{
+	background-color: var(--user-color);
+	color: var(--font-color);
 }
 .main .bannerCollection{
 	display: flex;
@@ -60,9 +66,16 @@
 	margin-top: 20px;
 }
 .main .portfolio .portfolio-left .titleH3{
+	color: var(--font-color);
+	background-color: var(--user-color);
 	border-bottom: 1px solid var(--user-color);
-	padding: 10px 0;
+	padding: 10px;
+	margin: var(--default-padding);
+  border-radius: calc(var(--default-padding)*2);
+	text-align: center;
 	font-size: 24px;
+	overflow: hidden;
+	height: 54px;
 }
 .main .portfolio .portfolio-left .textarea{
 	padding: 10px 0;
